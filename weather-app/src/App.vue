@@ -10,7 +10,6 @@
           <div class="tab-link">Прогноз</div>
         </div>
       </div>
-      <!-- <div class="block3">Избранное</div> -->
       <favorites/>
       <div class="block4">4</div>
 
@@ -19,7 +18,7 @@
 </template>
 
 <script setup>
-import Favorites from './components/favorites.vue';
+import Favorites from '@/components/favorites.vue';
 import UiInput from './components/lib/ui-input.vue';
 
 </script>
