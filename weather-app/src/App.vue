@@ -3,11 +3,13 @@
     <div class="container">
       <ui-input class="input"/>
       <div class="block2">
-        <div class="tab">2</div>
+        <div class="tab">
+          <router-view/>
+        </div>
         <div class="tab-links">
-          <div class="tab-link">Сейчас</div>
-          <div class="tab-link">Детали</div>
-          <div class="tab-link">Прогноз</div>
+          <router-link class="tab-link" to="/">Сейчас</router-link>
+          <router-link class="tab-link" to="/details">Детали</router-link>
+          <router-link class="tab-link" to="/forecast">Прогноз</router-link>
         </div>
       </div>
       <favorites/>
@@ -19,7 +21,7 @@
 
 <script setup>
 import Favorites from '@/components/favorites.vue';
-import UiInput from './components/lib/ui-input.vue';
+import UiInput from '@/components/lib/ui-input.vue';
 
 </script>
 
@@ -51,7 +53,6 @@ import UiInput from './components/lib/ui-input.vue';
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // border: 1px solid black;
   grid-column: span 3;
   grid-row: span 3;
 }
@@ -78,5 +79,6 @@ import UiInput from './components/lib/ui-input.vue';
 .tab-link {
   width: 100%;
   border: 1px solid black;
+  color: black;
 }
 </style>
