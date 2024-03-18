@@ -1,6 +1,6 @@
 <template>
-  <div>
-    FORECAST
+  <div class="now">
+    ПРОГНОЗ
   </div>
 </template>
 

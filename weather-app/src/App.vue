@@ -71,14 +71,18 @@ import UiInput from '@/components/lib/ui-input.vue';
   border: 1px solid black;
 }
 .tab-links {
+  box-sizing: border-box;
   height: 45px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   border: 1px solid black;
 }
 .tab-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  border: 1px solid black;
   color: black;
 }
 </style>

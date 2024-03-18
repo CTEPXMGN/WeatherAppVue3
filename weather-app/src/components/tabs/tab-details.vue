@@ -1,6 +1,6 @@
 <template>
   <div>
-    DETAILS
+    ДЕТАЛИ
   </div>
 </template>
 
