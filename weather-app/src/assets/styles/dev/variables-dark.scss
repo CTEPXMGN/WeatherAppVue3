@@ -1,0 +1,71 @@
+//colors
+$link-color: #2192D9;
+$link-hover-color: #4ab9ff;
+$link-disabled-color: #9EACB5;
+
+
+//input
+$input-background: #0a131c;
+$link-placeholder-color: #9EACB5;
+//label
+$label-color: #CFDBE2;
+
+//modal
+$modal-background:  #0D2F45;
+
+//checkbox
+$label-active-color: #FFFFFF;
+
+//layout
+$main-background: #181818;
+
+//button colors
+$button-color: #d80000;
+$button-hover-color: #e90000;
+$button-font-color: #fff;
+$button-disabled-background-color: #284253;
+$button-disabled-font-color: #607685;
+$button-cancel-background: #7a8c98;
+
+//DatePicker colors
+$datepicker-background-color: #05131C;
+$datepicker-font-color: #ffffff;
+$error-color: #d80000;
+
+//header
+$main-background: #0a2b41;
+$info-background: #18283a;
+$info-background-hover:#082131;
+$mobile-background: #D90000;
+$button-background: #fff;
+
+//NavBar
+$text-color: #c6cbcf;
+$active-text-color: #F2F2F2;
+
+$c-green-100: #53D9C0;
+
+$default-text-color: #c4cbcf;
+$placeholder-color: #a5a5a5;
+
+@mixin base-input-style {
+  transition: 0.2s;
+  border: solid 2px transparent;
+  background: $input-background;
+  border-radius: 16px;
+  color: #fff;
+  height: var(--input-height, 40px);
+  padding: 0 17px;
+  font-size: 14px;
+  width: 100%;
+  text-overflow: ellipsis;
+  &.error {
+    border-color: #d80000;
+  }
+  &::placeholder {
+    color: $placeholder-color;
+  }
+  &.disabled{
+    background: #4d5865;
+  }
+}

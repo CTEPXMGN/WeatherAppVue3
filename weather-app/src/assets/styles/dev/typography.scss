@@ -1,0 +1,98 @@
+@mixin font($size, $weight, $lineHeight, $namespace: null, $onlyVars: false) {
+  @if ($namespace) {
+    @if ($onlyVars) {
+      --#{$namespace}-font-size: #{$size};
+      --#{$namespace}-font-weight: #{$weight};
+      --#{$namespace}-line-height: #{$lineHeight};
+    } @else {
+      font-size: var(--#{$namespace}-font-size, $size);
+      font-weight: var(--#{$namespace}-font-weight, $weight);
+      line-height: var(--#{$namespace}-line-height, $lineHeight);
+    }
+  } @else {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  }
+}
+
+@mixin h1($namespace: null, $onlyVars: false) {
+  @include font(32px, 700, 40px, $namespace, $onlyVars);
+}
+@mixin h2($namespace: null, $onlyVars: false) {
+  @include font(24px, 700, 30px, $namespace, $onlyVars);
+}
+@mixin h3($namespace: null, $onlyVars: false) {
+  @include font(18px, 600, 22px, $namespace, $onlyVars);
+}
+@mixin h4($namespace: null, $onlyVars: false) {
+  @include font(14px, 500, 18px, $namespace, $onlyVars);
+}
+@mixin h5($namespace: null, $onlyVars: false) {
+  @include font(12px, 500, 15px, $namespace, $onlyVars);
+}
+
+@mixin txt-l($namespace: null, $onlyVars: false) {
+  @include font(18px, 400, 22px, $namespace, $onlyVars);
+}
+@mixin txt-l-m($namespace: null, $onlyVars: false) {
+  @include font(18px, 500, 22px, $namespace, $onlyVars);
+}
+@mixin txt-l-sb($namespace: null, $onlyVars: false) {
+  @include font(18px, 600, 22px, $namespace, $onlyVars);
+}
+@mixin txt-l-b($namespace: null, $onlyVars: false) {
+  @include font(18px, 700, 22px, $namespace, $onlyVars);
+}
+
+@mixin txt-m($namespace: null, $onlyVars: false) {
+  @include font(16px, 400, 20px, $namespace, $onlyVars);
+}
+@mixin txt-m-m($namespace: null, $onlyVars: false) {
+  @include font(16px, 500, 20px, $namespace, $onlyVars);
+}
+@mixin txt-m-sb($namespace: null, $onlyVars: false) {
+  @include font(16px, 600, 20px, $namespace, $onlyVars);
+}
+@mixin txt-m-b($namespace: null, $onlyVars: false) {
+  @include font(16px, 700, 20px, $namespace, $onlyVars);
+}
+
+@mixin txt-r($namespace: null, $onlyVars: false) {
+  @include font(14px, 400, 17px, $namespace, $onlyVars);
+}
+@mixin txt-r-m($namespace: null, $onlyVars: false) {
+  @include font(14px, 500, 17px, $namespace, $onlyVars);
+}
+@mixin txt-r-sb($namespace: null, $onlyVars: false) {
+  @include font(14px, 600, 17px, $namespace, $onlyVars);
+}
+@mixin txt-r-b($namespace: null, $onlyVars: false) {
+  @include font(14px, 700, 17px, $namespace, $onlyVars);
+}
+
+@mixin txt-s($namespace: null, $onlyVars: false) {
+  @include font(12px, 400, 14px, $namespace, $onlyVars);
+}
+@mixin txt-s-m($namespace: null, $onlyVars: false) {
+  @include font(12px, 500, 14px, $namespace, $onlyVars);
+}
+@mixin txt-s-sb($namespace: null, $onlyVars: false) {
+  @include font(12px, 600, 14px, $namespace, $onlyVars);
+}
+@mixin txt-s-b($namespace: null, $onlyVars: false) {
+  @include font(12px, 700, 14px, $namespace, $onlyVars);
+}
+
+@mixin txt-t($namespace: null, $onlyVars: false) {
+  @include font(11px, 400, 13px, $namespace, $onlyVars);
+}
+@mixin txt-t-m($namespace: null, $onlyVars: false) {
+  @include font(11px, 500, 13px, $namespace, $onlyVars);
+}
+@mixin txt-t-sb($namespace: null, $onlyVars: false) {
+  @include font(11px, 600, 13px, $namespace, $onlyVars);
+}
+@mixin txt-t-b($namespace: null, $onlyVars: false) {
+  @include font(11px, 700, 13px, $namespace, $onlyVars);
+}

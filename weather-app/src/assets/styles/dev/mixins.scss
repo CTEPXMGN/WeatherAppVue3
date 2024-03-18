@@ -1,0 +1,29 @@
+@use "sass:meta";
+@use "sass:list";
+@use "sass:string";
+
+@mixin element-variant(
+  $namespace,
+  $variant: '',
+  $map: ()
+) {
+  @if meta.type-of($map) == 'map' {
+    $variantPrefix: if(string.length($variant) > 0, '-' + $variant, '');
+
+    @at-root {
+      :root {
+        @each $property, $value in $map {
+          --#{$namespace}#{$variantPrefix}-#{$property}: #{$value};
+        }
+      }
+    }
+
+    @if (string.length($variant) > 0) {
+      &-#{$variantPrefix} {
+        @each $property, $value in $map {
+          --#{$namespace}-#{$property}: var(--#{$namespace}#{$variantPrefix}-#{$property});
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@use "dev/typography" as *;
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+h1 {
+  @include h1('h1');
+}
+h2 {
+  @include h2('h2');
+}
+h3 {
+  @include h3('h3');
+}
+h4 {
+  @include h4('h4');
+}
+h5 {
+  @include h5('h5');
+}
+
+.txt-l {
+  @include txt-l;
+}
+.txt-l-m {
+  @include txt-l-m;
+}
+.txt-l-sb {
+  @include txt-l-sb;
+}
+.txt-l-b {
+  @include txt-l-b;
+}
+
+.txt-m {
+  @include txt-m;
+}
+.txt-m-m {
+  @include txt-m-m;
+}
+.txt-m-sb {
+  @include txt-m-sb;
+}
+.txt-m-b {
+  @include txt-m-b;
+}
+
+.txt-r {
+  @include txt-r;
+}
+.txt-r-m {
+  @include txt-r-m;
+}
+.txt-r-sb {
+  @include txt-r-sb;
+}
+.txt-r-b {
+  @include txt-r-b;
+}
+
+.txt-s {
+  @include txt-s;
+}
+.txt-s-m {
+  @include txt-s-m;
+}
+.txt-s-sb {
+  @include txt-s-sb;
+}
+.txt-s-b {
+  @include txt-s-b;
+}
+
+.txt-t {
+  @include txt-t;
+}
+.txt-t-m {
+  @include txt-t-m;
+}
+.txt-t-sb {
+  @include txt-t-sb;
+}
+.txt-t-b {
+  @include txt-t-b;
+}

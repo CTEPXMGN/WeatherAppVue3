@@ -1,0 +1,35 @@
+@use "dev/variables-dark" as *;
+@use "dev/mixins" as *;
+@use "dev/media" as *;
+
+:root {
+  --header-height: 46px;
+
+  @include tablet-up {
+    --header-height: 80px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-blue-300);
+}
+
+h1, h2, h3, h4, h5, h6, hr {
+  margin: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--c-grey-400);
+}
+
+.container{
+  box-sizing: border-box;
+
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: var(--container-width, 1432px);
+  padding: var(--container-padding, 0 16px);
+}

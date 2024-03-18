@@ -1,0 +1,28 @@
+@use 'dev/colors' as *;
+
+:root {
+  --c-white: #{$c-white};
+  --c-black: #{$c-black};
+
+  --c-grey-100: #{$c-grey-100};
+  --c-grey-200: #{$c-grey-200};
+  --c-grey-300: #{$c-grey-300};
+  --c-grey-400: #{$c-grey-400};
+  --c-grey-500: #{$c-grey-500};
+  --c-grey-600: #{$c-grey-600};
+
+  --c-red-400: #{$c-red-400};
+  --c-red-500: #{$c-red-500};
+  --c-red-600: #{$c-red-600};
+  --c-red-700: #{$c-red-700};
+
+  --c-blue-300: #{$c-blue-300};
+  --c-blue-400: #{$c-blue-400};
+  --c-blue-500: #{$c-blue-500};
+  --c-blue-600: #{$c-blue-600};
+
+  --c-green-100: #{$c-green-100};
+  --c-green-500: #{$c-green-500};
+  
+  --c-orange-600: #{$c-orange-600};
+}
